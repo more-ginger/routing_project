@@ -1,6 +1,6 @@
 # routing_project
 
-####Datasets for granular routes - First Visualization
+#Datasets for granular routes - First Visualization
 A set of small datasets will be needed in order to create the first visualization.
 Here's a sketch of how it should look like in the end:
 
