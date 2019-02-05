@@ -1,7 +1,6 @@
-
-
-var width = 960,
-    height = 500;
+//Hamburg square map variables
+var width = 900,
+    height = 900;
 
 var projection = d3.geo.mercator()
     .scale(36000)
@@ -11,12 +10,15 @@ var center = projection([10.180, 53.392]);
 
 var path = d3.geo.path().projection(projection);
 
-var svg = d3.select("body").append("svg")
+var svg_hamburg = d3.select("#map-holder").append("svg")
     .attr("width", width)
     .attr("height", height)
     .attr("class","map");
 
-var vector = svg;
+var vector = svg_hamburg;
+
+
+//rendering Hamburg square map
 
 d3.json("data/map.topojson", function(error, us) {
 
@@ -30,7 +32,7 @@ console.log(b);
  var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
   projection.scale(s).translate(t);
 
-    vector = svg.selectAll("path")
+    vector = svg_hamburg.selectAll("path")
         .data(plane.features)
         .enter()
         .append("path")
@@ -40,12 +42,5 @@ console.log(b);
 
 });
 
-d3.csv("data/hamburg_public_transport.csv", function(d){
-  console.log(d);
-  var c10 = d3.scale.category10();
-  vector = svg.selectAll("path")
-         .data(d.avg_total_time)
-         .attr("class","prova")
-         //.style("fill", function(d){ return c10(d.One)});
-
-});
+//Forcing map position to the center of the screen
+$("svg").css({top: 0, left: 200, position:'absolute'});
