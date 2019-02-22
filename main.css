@@ -1,26 +1,87 @@
 body {
-  background-color: #FCF1E8;
+  background-color: #FCFDFF;
 }
-
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #F3F9FF;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border: 1px solid #1B4077;
+}
 .container-fluid {
-  background-color: #FCFCFC;
+  padding: 0;
+  z-index: 2;
 }
 
-.title {
+.space-top {
+  padding-top: 15vh;
+}
+.space-top2 {
+  padding-top: 10vh;
+}
+
+#header{
+ height: 50vh;
+ background-color: #1B4077;
+}
+
+#main-title, #intro-par {
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 50px;
+  font-family: 'Cousine';
+  color:#1B4077;
 }
 
-#first-paragraph, #route-viz {
-  text-align: center;
-  margin: 30px auto;
+#intro-par{
+  font-family: 'Karla';
+  padding: 0 30px 0 30px;
 }
 
-.map {
+.center-title {
   margin: 0 auto;
 }
 
-.county {
-  fill: white;
-  stroke: black;
+.arrow{
+  height: 50px;
+  width: auto;
+  margin: 0 29px;
+}
+
+#start {
+  font-family: 'Cousine';
+  color:#1B4077;
+  font-size: 10px;
+}
+
+.chapter-title {
+  font-family: 'Cousine';
+  color:#1B4077;
+}
+
+.chapter-par {
+  font-family: 'Karla';
+  margin-top: 30px;
+  color:#1B4077;
+}
+/*first viz*/
+#first-legend {
+  padding: 0;
+}
+.legend {
+  width: inherit;
+  height: auto;
+}
+
+.path-style {
+  stroke: #1B4077;
+  fill: none;
+}
+
+#first-viz{
+      margin: 0 auto;
 }

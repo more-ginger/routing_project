@@ -6,23 +6,35 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Cousine:400,400i,700,700i|Karla:400,400i,700,700i" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-	<div class="col-12"><h2 class="title">Routing Project</h2></div>
-  <div class="col-6" id="first-paragraph">Below the first granular visualization about specific path times.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+<div class="container-fluid">
+	<div id="header"></div>
+	<div class="col-9 center-title">
+		<h1 id="main-title">Project Title</h1>
+		<p id="intro-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+	</div>
+	<div class="col-1 center-title space-top"><p id="start">START EXPLORING</p><img class="arrow" src="assets/arrow_down.svg" onerror="this.src='your.png'"></div>
 </div>
-<div class="container-fluid" id="routes">
-<div class="col-6" id="route-viz">content.</div>
-</div>
-<div class="container-fluid" id="hamburg_map">
-<div class="col-12" id="map-holder"></div>
-</div>
+<div class="col-1 sidenav"></div>
+ <div class="container">
+	 <div class="col-9 space-top">
+		 <h1 class="chapter-title">First Chapter Introduction</h1>
+		 <p class="chapter-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+	 </div>
+ 	<div class="col-12 center-title space-top" id="firt-legend"><img class="legend" src="assets/legend-1.svg" onerror="this.src='your.png'"></div>
+ </div>
+ <div class="col-1 center-title space-top2"><img class="arrow" src="assets/arrow_down.svg" onerror="this.src='your.png'"></div>
+ <div class="container"><div class="col-9" id="first-viz"></div></div></div>
 <footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="main.js"></script>
 </footer>
 </body>
+
 </html>
